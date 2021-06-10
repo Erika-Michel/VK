@@ -5,7 +5,7 @@ public class Post {
     private String postUrl; // ссылка на пост мб?
     private String date;
     private String time;
-    private String authorId; // автор поста (должно подтягивать имя и аватар)
+    private String authorId; // автор поста (должно подтягивать имя и аватар; мб отдельный класс)
     private String text;
     private int maxTextLength;
     private int previewTextLength;

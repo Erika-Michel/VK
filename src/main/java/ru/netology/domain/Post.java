@@ -1,19 +1,32 @@
 package ru.netology.domain;
 
 public class Post {
-    private String id; // идентификатор поста
-    private String postUrl; // ссылка на пост мб?
-    private String date;
-    private String time;
-    private String authorId; // автор поста (должно подтягивать имя и аватар; мб отдельный класс)
+    private int id;
+    private int ownerId;
+    private int fromId;
+    private int createdBy;
+    private int date;
     private String text;
-    private int maxTextLength;
-    private int previewTextLength;
-    private String mediaUrl; //Медиаматериал (изображение, видео, ссылка)
-    private int viewsQuantity;
-    private Like like;
-    private Comment comment;
-    private Repost repost;
+    private int replyOwnerId;
+    private int replyPostId;
+    private int friendsOnly;
+    private CommentsInfo commentsInfo;
+    private Copyright copyright;
+    private LikesInfo likesInfo;
+    private RepostsInfo repostsInfo;
+    private ViewsInfo viewsInfo;
+    private String postType;
+    private PostSource postSource;
+    private Geo geo;
+    private int signerId;
+    private int canPin;
+    private int canDelete;
+    private int canEdit;
+    private int isPinned;
+    private int markedAsAds;
+    private boolean isFavorite;
+    private Donut donut;
+    private int postponedId;
 
     // + getters/setters
 }
